@@ -13,6 +13,10 @@ import imgSuihuachangqun from '@/assets/碎花长裙.png';
 import imgNiuzaiku from '@/assets/牛仔裤.png';
 import imgXiuxianku from '@/assets/休闲裤.png';
 import imgYundongku from '@/assets/运动裤.png';
+import imgZhenzhuXianglian from '@/assets/珍珠项链.png';
+import imgShoulian from '@/assets/手链.png';
+import imgErhuan from '@/assets/耳环.png';
+import imgMojing from '@/assets/墨镜.png';
 
 export type ClothingCategory = 'hat' | 'top' | 'bottom' | 'accessory';
 export type WardrobeFilter = 'all' | 'hat' | 'top' | 'skirt' | 'pants' | 'accessory';
@@ -66,10 +70,10 @@ export const wardrobeItems: ClothingItem[] = [
   { id: 'b6', name: '运动裤', category: 'bottom', subCategory: 'pants', emoji: '🏃', image: imgYundongku, color: 'hsl(0, 0%, 30%)' },
 
   // Accessories
-  { id: 'a1', name: '珍珠项链', category: 'accessory', emoji: '📿', color: 'hsl(40, 50%, 90%)' },
-  { id: 'a2', name: '手链', category: 'accessory', emoji: '💎', color: 'hsl(50, 60%, 70%)' },
-  { id: 'a3', name: '耳环', category: 'accessory', emoji: '✨', color: 'hsl(45, 80%, 65%)' },
-  { id: 'a4', name: '墨镜', category: 'accessory', emoji: '🕶️', color: 'hsl(0, 0%, 20%)' },
+  { id: 'a1', name: '珍珠项链', category: 'accessory', emoji: '📿', image: imgZhenzhuXianglian, color: 'hsl(40, 50%, 90%)' },
+  { id: 'a2', name: '手链', category: 'accessory', emoji: '💎', image: imgShoulian, color: 'hsl(50, 60%, 70%)' },
+  { id: 'a3', name: '耳环', category: 'accessory', emoji: '✨', image: imgErhuan, color: 'hsl(45, 80%, 65%)' },
+  { id: 'a4', name: '墨镜', category: 'accessory', emoji: '🕶️', image: imgMojing, color: 'hsl(0, 0%, 20%)' },
 ];
 
 export const filterLabels: { key: WardrobeFilter; label: string }[] = [
