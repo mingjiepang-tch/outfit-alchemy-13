@@ -1,3 +1,8 @@
+import imgBangqiumao from '@/assets/棒球帽.png';
+import imgYufumao from '@/assets/渔夫帽.jpeg';
+import imgBeilei from '@/assets/贝雷帽.png';
+import imgZhenzhi from '@/assets/针织帽.png';
+
 export type ClothingCategory = 'hat' | 'top' | 'bottom' | 'accessory';
 export type WardrobeFilter = 'all' | 'hat' | 'top' | 'skirt' | 'pants' | 'accessory';
 
@@ -7,6 +12,7 @@ export interface ClothingItem {
   category: ClothingCategory;
   subCategory?: 'skirt' | 'pants';
   emoji: string;
+  image?: string;
   color: string;
 }
 
@@ -26,10 +32,10 @@ export const scenes: Scene[] = [
 
 export const wardrobeItems: ClothingItem[] = [
   // Hats
-  { id: 'h1', name: '棒球帽', category: 'hat', emoji: '🧢', color: 'hsl(210, 60%, 70%)' },
-  { id: 'h2', name: '渔夫帽', category: 'hat', emoji: '👒', color: 'hsl(40, 60%, 80%)' },
-  { id: 'h3', name: '贝雷帽', category: 'hat', emoji: '🎩', color: 'hsl(0, 50%, 40%)' },
-  { id: 'h4', name: '针织帽', category: 'hat', emoji: '🧶', color: 'hsl(30, 50%, 65%)' },
+  { id: 'h1', name: '棒球帽', category: 'hat', emoji: '🧢', image: imgBangqiumao, color: 'hsl(210, 60%, 70%)' },
+  { id: 'h2', name: '渔夫帽', category: 'hat', emoji: '👒', image: imgYufumao, color: 'hsl(40, 60%, 80%)' },
+  { id: 'h3', name: '贝雷帽', category: 'hat', emoji: '🎩', image: imgBeilei, color: 'hsl(0, 50%, 40%)' },
+  { id: 'h4', name: '针织帽', category: 'hat', emoji: '🧶', image: imgZhenzhi, color: 'hsl(30, 50%, 65%)' },
 
   // Tops
   { id: 't1', name: '白色衬衫', category: 'top', emoji: '👔', color: 'hsl(0, 0%, 95%)' },
