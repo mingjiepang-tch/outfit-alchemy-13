@@ -2,6 +2,11 @@ import imgBangqiumao from '@/assets/棒球帽.png';
 import imgYufumao from '@/assets/渔夫帽.jpeg';
 import imgBeilei from '@/assets/贝雷帽.png';
 import imgZhenzhi from '@/assets/针织帽.png';
+import imgBaisechenshan from '@/assets/白色衬衫.png';
+import imgTiaowenT from '@/assets/条纹T恤.png';
+import imgZhenzhimaoyi from '@/assets/针织毛衣.png';
+import imgWeiyi from '@/assets/卫衣.png';
+import imgSuihuachenshan from '@/assets/碎花衬衫.png';
 
 export type ClothingCategory = 'hat' | 'top' | 'bottom' | 'accessory';
 export type WardrobeFilter = 'all' | 'hat' | 'top' | 'skirt' | 'pants' | 'accessory';
@@ -38,11 +43,11 @@ export const wardrobeItems: ClothingItem[] = [
   { id: 'h4', name: '针织帽', category: 'hat', emoji: '🧶', image: imgZhenzhi, color: 'hsl(30, 50%, 65%)' },
 
   // Tops
-  { id: 't1', name: '白色衬衫', category: 'top', emoji: '👔', color: 'hsl(0, 0%, 95%)' },
-  { id: 't2', name: '条纹T恤', category: 'top', emoji: '👕', color: 'hsl(210, 50%, 80%)' },
-  { id: 't3', name: '针织毛衣', category: 'top', emoji: '🧥', color: 'hsl(20, 40%, 70%)' },
-  { id: 't4', name: '卫衣', category: 'top', emoji: '👚', color: 'hsl(340, 50%, 75%)' },
-  { id: 't5', name: '碎花衬衫', category: 'top', emoji: '🌸', color: 'hsl(330, 60%, 85%)' },
+  { id: 't1', name: '白色衬衫', category: 'top', emoji: '👔', image: imgBaisechenshan, color: 'hsl(0, 0%, 95%)' },
+  { id: 't2', name: '条纹T恤', category: 'top', emoji: '👕', image: imgTiaowenT, color: 'hsl(210, 50%, 80%)' },
+  { id: 't3', name: '针织毛衣', category: 'top', emoji: '🧥', image: imgZhenzhimaoyi, color: 'hsl(20, 40%, 70%)' },
+  { id: 't4', name: '卫衣', category: 'top', emoji: '👚', image: imgWeiyi, color: 'hsl(340, 50%, 75%)' },
+  { id: 't5', name: '碎花衬衫', category: 'top', emoji: '🌸', image: imgSuihuachenshan, color: 'hsl(330, 60%, 85%)' },
 
   // Bottoms - Skirts
   { id: 'b1', name: '百褶裙', category: 'bottom', subCategory: 'skirt', emoji: '👗', color: 'hsl(240, 30%, 70%)' },
