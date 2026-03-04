@@ -91,10 +91,9 @@ const Index = () => {
                 {item ? (
                   <div className="flex flex-col items-center gap-1 animate-scale-in">
                     {item.image ? (
-                      <img src={item.image} alt={item.name} className="h-12 w-12 object-contain sm:h-16 sm:w-16" />
-                    ) : (
-                      <span className="text-4xl sm:text-5xl">{item.emoji}</span>
-                    )}
+                      <img src={item.image} alt={item.name} className="h-12 w-12 object-contain sm:h-16 sm:w-16" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling && ((e.currentTarget.nextElementSibling as HTMLElement).style.display = 'inline'); }} />
+                    ) : null}
+                    <span className="text-4xl sm:text-5xl" style={{ display: item.image ? 'none' : 'inline' }}>{item.emoji}</span>
                     <span className="text-xs font-medium text-foreground">{item.name}</span>
                   </div>
                 ) : (
@@ -165,12 +164,11 @@ const Index = () => {
                 )}
               >
                 {item.image ? (
-                  <img src={item.image} alt={item.name} className="h-14 w-14 object-contain sm:h-16 sm:w-16 transition-transform duration-200 group-hover:scale-110" />
-                ) : (
-                  <span className="text-4xl sm:text-5xl transition-transform duration-200 group-hover:scale-110">
-                    {item.emoji}
-                  </span>
-                )}
+                  <img src={item.image} alt={item.name} className="h-14 w-14 object-contain sm:h-16 sm:w-16 transition-transform duration-200 group-hover:scale-110" onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling && ((e.currentTarget.nextElementSibling as HTMLElement).style.display = 'inline'); }} />
+                ) : null}
+                <span className="text-4xl sm:text-5xl transition-transform duration-200 group-hover:scale-110" style={{ display: item.image ? 'none' : 'inline' }}>
+                  {item.emoji}
+                </span>
                 <span className="mt-2 text-xs font-medium text-foreground sm:text-sm">{item.name}</span>
                 <div
                   className="absolute bottom-2 left-1/2 h-1.5 w-6 -translate-x-1/2 rounded-full"
