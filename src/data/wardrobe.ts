@@ -17,6 +17,7 @@ import imgZhenzhuXianglian from '@/assets/珍珠项链.png';
 import imgShoulian from '@/assets/手链.png';
 import imgErhuan from '@/assets/耳环.png';
 import imgMojing from '@/assets/墨镜.png';
+import imgYundongneiyi from '@/assets/运动内衣.jpeg';
 
 export type ClothingCategory = 'hat' | 'top' | 'bottom' | 'accessory';
 export type WardrobeFilter = 'all' | 'hat' | 'top' | 'skirt' | 'pants' | 'accessory';
@@ -58,6 +59,7 @@ export const wardrobeItems: ClothingItem[] = [
   { id: 't3', name: '针织毛衣', category: 'top', emoji: '🧥', image: imgZhenzhimaoyi, color: 'hsl(20, 40%, 70%)' },
   { id: 't4', name: '卫衣', category: 'top', emoji: '👚', image: imgWeiyi, color: 'hsl(340, 50%, 75%)' },
   { id: 't5', name: '碎花衬衫', category: 'top', emoji: '🌸', image: imgSuihuachenshan, color: 'hsl(330, 60%, 85%)' },
+  { id: 't6', name: '运动内衣', category: 'top', emoji: '🏋️', image: imgYundongneiyi, color: 'hsl(0, 0%, 80%)' },
 
   // Bottoms - Skirts
   { id: 'b1', name: '百褶裙', category: 'bottom', subCategory: 'skirt', emoji: '👗', image: imgBaizhequn, color: 'hsl(240, 30%, 70%)' },
